@@ -117,3 +117,27 @@ Tailwind CSS is a utility-first CSS framework that provides low-level utility cl
 - **Responsive Design**: Built-in responsive utilities.
 
 Using these advanced CSS techniques and tools, developers can create more sophisticated, maintainable, and responsive web designs.
+## Defining Animations and Transitions in CSS
+
+### Animations
+CSS animations enable the gradual change of an element's properties over time, allowing for complex visual effects.
+
+#### Key Properties:
+- **@keyframes**: Defines the stages of the animation.
+- **animation-name**: Specifies the name of the @keyframes animation.
+- **animation-duration**: Sets the duration of the animation cycle.
+- **animation-timing-function**: Defines the speed curve of the animation.
+- **animation-delay**: Sets a delay before the animation starts.
+- **animation-iteration-count**: Specifies the number of times the animation should repeat.
+- **animation-direction**: Defines whether the animation should play in reverse on alternate cycles.
+
+### Transitions
+CSS transitions provide a way to smoothly change property values over a specified duration, enhancing the user experience with subtle effects.
+
+#### Key Properties:
+- **transition-property**: Specifies the CSS property to be transitioned.
+- **transition-duration**: Defines the duration of the transition.
+- **transition-timing-function**: Specifies the speed curve of the transition.
+- **transition-delay**: Sets a delay before the transition starts.
+
+By using animations and transitions, developers can create engaging and interactive web experiences that respond to user interactions.
