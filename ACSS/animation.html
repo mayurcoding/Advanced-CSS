@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
 
     <style>
-        .box{
+        .box {
             height: 200px;
             width: 200px;
             background-color: red;
             margin: 100px;
             color: white;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            }
+
+        @keyframes example {
+            0% {
+                background-color: royalblue; width: 400px;
+            }
+
+            25% {
+                background-color: red; width: 600px;
+            }
+
+            50% {
+                background-color: yellow; width: 800px;
+            }
+
+            100% {
+                background-color: black; width: 400px;
+            }
+
+
+
+
         }
     </style>
 </head>
+
 <body>
-    <div class="class">
-        Animation here
+    <div class="box">
+        <h1>Animation here</h1>
     </div>
-    
+
 </body>
+
 </html>
