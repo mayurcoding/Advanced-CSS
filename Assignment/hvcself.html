@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Verification</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        container {
+            width: 600px;
+            margin: auto;
+            background-color: #ffff;
+            padding: 15px;
+
+        }
+
+        .box-container img {
+            width: 200px;
+        }
+
+        .box-container button:hover {
+            background-color: #008cba;
+            color: white;
+
+
+        }
+
+        .box-container button {
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .captcha-container {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            padding: 0 10px;
+            margin-left: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Human Verification Check</h1>
+        <p>Please enter the chraracters you see in the image below</p>
+        <div class="box-container">
+            <img src="/images/J3sMVOhXTDakH0RIb3vv_image.jpeg" alt="captcha image">
+            <input type="text" class="captcha-input" title="text number">
+            <button>Submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

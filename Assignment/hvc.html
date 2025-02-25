@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Verification</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .captcha-container {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .captcha-image img {
+            width: 200px;
+            height: auto;
+        }
+        .captcha-input-container {
+            margin-left: 20px;
+        }
+        .captcha-input {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .btn:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Human Verification Check</h2>
+        <p>Please enter the characters you see in the image below:</p>
+        <div class="captcha-container">
+            <div class="captcha-image">
+                <img src="/images/J3sMVOhXTDakH0RIb3vv_image.jpeg" alt="captcha image" />
+            </div>
+            <div class="captcha-input-container">
+                <input type="text" class="captcha-input" placeholder="Enter CAPTCHA" />
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
