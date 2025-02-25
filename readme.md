@@ -280,3 +280,155 @@ body {
 - **@keyframes**: Creates an animation to rotate the cube.
 
 By combining these techniques, you can create various 3D designs and animations to enhance your web pages.
+
+## CSS Media Queries
+
+CSS media queries are a powerful tool for applying styles based on the characteristics of the device or viewport. They enable responsive design by allowing different styles to be applied depending on factors such as screen size, resolution, orientation, and more.
+
+### Syntax
+A media query consists of a media type and one or more expressions that check for the conditions of particular media features.
+
+```css
+@media media-type and (media-feature: value) {
+    /* CSS rules */
+}
+```
+
+### Example
+Here’s an example of a media query that applies styles only to screens with a maximum width of 600px:
+
+```css
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+```
+
+### Common Media Features
+- **width / height**: The width and height of the viewport.
+- **min-width / max-width**: Minimum and maximum width of the viewport.
+- **orientation**: The orientation of the device (portrait or landscape).
+- **resolution**: The resolution of the device.
+
+### Example Usage
+```css
+/* Apply styles for devices with a width of 768px or less */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Apply styles for devices in landscape orientation */
+@media screen and (orientation: landscape) {
+    .header {
+        height: 100px;
+    }
+}
+```
+
+Using media queries, you can create responsive designs that adapt to different devices and screen sizes, providing a better user experience across various platforms.
+
+## Pagination
+
+Pagination is a technique used to divide content into discrete pages, making it easier to navigate and consume large amounts of information. It is commonly used in web applications to manage lists of items, such as search results or blog posts.
+
+### Example
+Here’s an example of basic pagination HTML structure:
+
+```html
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
+```
+
+### CSS Styling
+```css
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+}
+```
+
+## Multi-column Layout
+
+Multi-column layout in CSS allows you to create layouts with multiple columns, similar to newspaper or magazine layouts. This can improve readability and make better use of available space.
+
+### Example
+Here’s an example of a multi-column layout:
+
+```css
+.columns {
+    column-count: 3;
+    column-gap: 20px;
+}
+```
+
+### HTML Structure
+```html
+<div class="columns">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+    <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+</div>
+```
+
+### CSS Properties
+- **column-count**: Specifies the number of columns.
+- **column-gap**: Sets the gap between columns.
+- **column-rule**: Adds a rule (line) between columns.
+
+## CSS Variables
+
+CSS variables, also known as custom properties, allow you to store values that can be reused throughout your CSS. They make it easier to manage and maintain your styles.
+
+### Example
+Here’s an example of defining and using CSS variables:
+
+```css
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+}
+
+body {
+    font-size: var(--font-size);
+    color: var(--primary-color);
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+```
+
+### Key Properties
+- **--variable-name**: Defines a custom property.
+- **var(--variable-name)**: Uses the value of a custom property.
+
+By using CSS variables, you can create more maintainable and scalable stylesheets, making it easier to update and manage your design system.
