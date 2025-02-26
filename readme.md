@@ -432,3 +432,40 @@ h1 {
 - **var(--variable-name)**: Uses the value of a custom property.
 
 By using CSS variables, you can create more maintainable and scalable stylesheets, making it easier to update and manage your design system.
+
+## Bootstrap
+
+Bootstrap is a powerful, open-source front-end framework used for developing responsive and mobile-first websites. It provides a collection of CSS and JavaScript tools that help developers create modern, visually appealing web pages quickly and efficiently.
+
+### Key Features:
+- **Responsive Grid System**: A flexible grid system that adapts to different screen sizes, making it easy to create responsive layouts.
+- **Pre-styled Components**: A wide range of reusable components like buttons, forms, modals, and navigation bars that can be easily customized.
+- **JavaScript Plugins**: A set of JavaScript plugins that add interactive elements such as carousels, modals, and tooltips.
+- **Customization**: Highly customizable with Sass variables and mixins, allowing developers to tailor the framework to their specific needs.
+- **Cross-browser Compatibility**: Ensures consistent appearance and functionality across various browsers and devices.
+
+### Example Usage:
+To get started with Bootstrap, include the following in your HTML file:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Hello, Bootstrap!</h1>
+        <button class="btn btn-primary">Click Me</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+```
+
+Using Bootstrap can significantly speed up the development process and help maintain a consistent design throughout your project.
