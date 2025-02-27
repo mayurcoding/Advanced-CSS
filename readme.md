@@ -213,18 +213,3 @@ CSS transforms allow you to manipulate the appearance of elements by rotating, s
 ```
 
 Using CSS transforms, you can create dynamic and visually appealing effects that enhance the user experience.
-
-
-
-## What is Tailwind CSS?
-
-Tailwind CSS is a utility-first CSS framework that provides a set of predefined classes to help developers build custom designs directly in their HTML. Unlike traditional CSS frameworks that offer pre-designed components, Tailwind focuses on low-level utility classes that can be composed to create any design.
-
-### Key Features of Tailwind CSS:
-- **Utility-First Approach**: Provides low-level utility classes for building custom designs without writing custom CSS.
-- **Responsive Design**: Built-in responsive utilities to create designs that work on various screen sizes.
-- **Customization**: Highly customizable through configuration files, allowing developers to define their own design system.
-- **Performance**: Generates minimal CSS by purging unused styles, resulting in faster load times.
-- **Component-Friendly**: Works well with component-based frameworks like React, Vue, and Angular.
-
-Using Tailwind CSS can streamline the development process by providing a consistent set of utilities, making it easier to maintain and scale your projects.
