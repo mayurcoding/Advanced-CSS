@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: flex;
+    overflow: hidden;
+}
+.sidebar
+{
+    width: 20vw;
+    border-right: 0.5px solid black;
+    height: 100vh;
+    overflow: none;
+    display: flex;
+}
+.main
+{
+    height: 100vh;
+    overflow-x: none;
+    overflow-y: scroll;
+    width: 80vw;
+}
