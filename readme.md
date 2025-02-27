@@ -748,3 +748,49 @@ $(function () {
 ```
 
 Using these Bootstrap components, you can create interactive and user-friendly web interfaces.
+
+
+## Scrollspy
+
+Scrollspy is a Bootstrap component that automatically updates navigation links based on the scroll position. It is useful for creating single-page navigation where the links highlight as you scroll through different sections of the page.
+
+### Example Usage
+
+Here’s an example of how to implement Scrollspy in Bootstrap:
+
+### HTML Structure
+
+```html
+<body data-spy="scroll" data-target="#navbar-example" data-offset="70">
+    <nav id="navbar-example" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+            </li>
+        </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example">
+        <h4 id="section1">Section 1</h4>
+        <p>Content for section 1...</p>
+        <h4 id="section2">Section 2</h4>
+        <p>Content for section 2...</p>
+        <h4 id="section3">Section 3</h4>
+        <p>Content for section 3...</p>
+    </div>
+</body>
+```
+
+### Explanation
+
+- **data-spy="scroll"**: Activates Scrollspy on the element.
+- **data-target="#navbar-example"**: Specifies the target navigation element to be updated.
+- **data-offset="70"**: Adjusts the scroll offset to account for fixed navigation bars.
+
+By using Scrollspy, you can enhance the navigation experience on your web pages, making it easier for users to know their current position within the content.

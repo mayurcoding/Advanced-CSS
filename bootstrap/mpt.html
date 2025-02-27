@@ -10,9 +10,18 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <title>Modals, toolkit and popovers</title>
+    <style>
+
+
+
+    </style>
 </head>
 
 <body>
+
+
+    
+
     <div class="container">
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Delete</button>
         <div id="modal" class="modal fade">
@@ -42,6 +51,30 @@
         </div>
     </div>
     </div>
+
+    <button type="button" class="btn btn-secondary"
+    data-bs-toggle="tooltip" data-bs-placement="top"
+    data-bs-custom-class="custom-tooltip"
+    data-bs-title="This top tooltip is themed via CSS variables.">
+Custom tooltip
+</button>
+
+
+
+
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+    Popover on top
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+    Popover on right
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+    Popover on bottom
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+    Popover on left
+  </button>
+
 </body>
 
 </html>
